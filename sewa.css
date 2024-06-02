@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    background-image: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWNuMG5rc28wbzJ3bDdoanlueDQxYjV3a3NwYzhzeWZkcnI2cTFyMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kKaVWUDkNq1hcPnzKe/giphy.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar {
+    background-color: #000000c4;
+    padding: 10px 0;
+    height: 80px; /* Navbar akan mengikuti guliran */
+    top: 0; /* Navbar akan tetap di bagian atas */
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: "Nabla", system-ui; 
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-link {
+    color: #fff;
+    padding: .2rem 1rem;
+    transition: color 0.3s ease;
+    letter-spacing: 2px;
+    font-family: "Arial", cursive;
+    font-weight: bold; 
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #ffffff;
+}
+
+.navbar-toggler {
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-size: 24px;
+    line-height: 1;
+    color: #fff;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    color: #ffffff;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff, 0 0 40px #00bfff, 0 0 70px #00bfff, 0 0 80px #00bfff, 0 0 100px #00bfff, 0 0 150px #00bfff;
+}
+
+.card {
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+}
+
+.card-text {
+    color: black;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+  
+  .card ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card ul li {
+    margin: 0 10px;
+  }
+  
+  .card ul li a img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .card ul li a img:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  
+/* Style untuk footer */
+footer {
+    background-color: #000000c4; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    padding: 40px 0; /* Padding atas dan bawah */
+    margin-top: 80px
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    width: 30%; /* Lebar setiap kolom footer */
+}
+
+.footer-content h3 {
+    font-size: 18px; /* Ukuran judul */
+    margin-bottom: 15px; /* Jarak bawah judul */
+}
+
+.footer-content p {
+    font-size: 14px; /* Ukuran teks */
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+
+.footer-bottom {
+    margin-top: 20px; /* Jarak atas footer bagian bawah */
+    text-align: center; /* Teks rata tengah */
+    padding-top: 10px; /* Padding atas */
+    border-top: 1px solid #666; /* Garis atas */
+    font-size: 14px; /* Ukuran teks */
+}
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: .2rem .5rem;
+    }
+
+    .card {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 0.875rem;
+    }
+
+    .footer-content {
+        width: 45%; /* Lebar setiap kolom footer */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        height: auto; /* Sesuaikan tinggi navbar */
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+        padding: .2rem .5rem;
+    }
+
+    .card {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.75rem;
+    }
+
+    .footer-content {
+        width: 100%; /* Lebar setiap kolom footer */
+        margin-bottom: 20px; /* Jarak bawah setiap kolom */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Susun kolom secara vertikal */
+        align-items: center; /* Pusatkan konten footer */
+    }
+}

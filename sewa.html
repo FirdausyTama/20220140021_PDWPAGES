@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sewa Layanan</title>
+  <link rel="icon" type="image/png" href="https://png.pngtree.com/png-clipart/20230917/original/pngtree-monkey-favicon-by-canva-vector-png-image_12282452.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="sewa.css">
+  <style>
+    .card-horizontal {
+      display: flex;
+      flex-direction: row;
+    }
+    .card-horizontal img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-horizontal .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .social-links {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 5px;
+    }
+    .social-links li {
+      margin: 0 10px;
+    }
+    .social-links img {
+      width: 32px;
+      height: 32px;
+    }
+  </style>
+</head>
+<body class="bg-image">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Sewa Developer</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="sewa.html">Sewa</a>
+            </li>                     
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Cards with Profile Picture and Description -->
+<div class="container">
+  <div class="card card-horizontal mx-auto mb-4" style="max-width: 800px;">
+    <img src="assets/img3.webp" alt="Profile Picture">
+    <div class="card-body">
+      <h3 class="card-title">Developer 1</h3>
+      <p class="card-text">Perkenalkan nama saya Developer 1. Saya memiliki pengalaman dalam pengembangan web Fullstack Dan UI/UX Designer.</p>
+      <p>Hubungi Saya ></p>
+      <ul class="social-links">
+        <li><a href="https://instagram.com/firdausy_tamz" target="blank"><img src="assets/instagram.png" alt="Instagram"></a></li>
+        <li><a href="https://www.youtube.com/channel/UC2li4Tj5bRw_hXuAiPGQtoQ" target="blank"><img src="assets/youtube.png" alt="YouTube"></a></li>
+        <li><a href="https://www.linkedin.com/in/firdausy-tama-7a1a5a1a5/" target="blank"><img src="assets/linkedin.png" alt="LinkedIn"></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card card-horizontal mx-auto mb-4" style="max-width: 800px;">
+    <img src="assets/img2.jpg" alt="Profile Picture">
+    <div class="card-body">
+      <h3 class="card-title">Developer 2</h3>
+      <p class="card-text">Perkenalkan nama saya Developer 2. Saya memiliki pengalaman dalam pengembangan web dan aplikasi mobile.</p>
+      <p>Hubungi Saya ></p>
+      <ul class="social-links">
+        <li><a href="https://www.instagram.com/firdausy_tamz/" target="blank"><img src="assets/instagram.png" alt="Instagram"></a></li>
+        <li><a href="https://www.youtube.com/channel/UC2li4Tj5bRw_hXuAiPGQtoQ" target="blank"><img src="assets/youtube.png" alt="YouTube"></a></li>
+        <li><a href="https://www.linkedin.com/in/firdausy-tama-7a1a5a1a5/" target="blank"><img src="assets/linkedin.png" alt="LinkedIn"></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card card-horizontal mx-auto mb-4" style="max-width: 800px;">
+    <img src="assets/img1.jpg" alt="Profile Picture">
+    <div class="card-body">
+      <h3 class="card-title">Developer 3</h3>
+      <p class="card-text">Perkenalkan nama saya Developer 3. Saya ahli dalam pengembangan software dan manajemen proyek.</p>
+      <p>Hubungi Saya ></p>
+      <ul class="social-links">
+        <li><a href="https://www.instagram.com/firdausy_tamz/" target="blank"><img src="assets/instagram.png" alt="Instagram"></a></li>
+        <li><a href="https://www.youtube.com/channel/UC2li4Tj5bRw_hXuAiPGQtoQ" target="blank"><img src="assets/youtube.png" alt="YouTube"></a></li>
+        <li><a href="https://www.linkedin.com/in/firdausy-tama-7a1a5a1a5/" target="blank"><img src="assets/linkedin.png" alt="LinkedIn"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-container">
+      <div class="footer-content">
+          <h3>Tentang Kami</h3>
+          <p>Menyediakan layanan Fullstak Developer, Junior Developer, UI/UX Designer, Frontend Developer, Backend developer. Dan masih banyak lainnya!</p>
+      </div>
+      <div class="footer-content">
+          <h3>Kontak Kami</h3>
+          <p>Alamat: Jalan Kasihan No. 123, Kota Yogyakarta, Indonesia</p>
+          <p>Email: info@example.com</p>
+          <p>Telepon: 123-456-7890</p>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>Hak Cipta &copy; 2024 PT Mencari Cinta Sejati. Semua hak dilindungi.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
